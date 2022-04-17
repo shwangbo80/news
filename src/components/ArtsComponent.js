@@ -2,6 +2,7 @@ import React from "react"
 import {useEffect, useState} from "react"
 import axios from "axios"
 
+import NewsComponent from "./NewsComponent"
 import RenderApiData from "./RenderApiData"
 
 export default function ArtsComponent() {
@@ -28,6 +29,7 @@ export default function ArtsComponent() {
     return (
         <>
             <RenderApiData apiData={apiData} dataFetched={dataFetched} />
+            <NewsComponent apiData={apiData} dataFetched={dataFetched} />
         </>
     )
 }

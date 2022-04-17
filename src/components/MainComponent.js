@@ -19,6 +19,8 @@ import StyleComponent from "./StyleComponent"
 import FoodComponent from "./FoodComponent"
 import TravelComponent from "./TravelComponent"
 import MagazineComponent from "./MagazineComponent"
+import SearchResultComponent from "./SearchResultComponent"
+import FooterComponent from "./FooterComponent"
 
 export default function MainComponent() {
     const [apiData, setApiData] = useState([])
@@ -70,8 +72,13 @@ export default function MainComponent() {
                     <Route path="/food" element={<FoodComponent />} />
                     <Route path="/travel" element={<TravelComponent />} />
                     <Route path="/magazine" element={<MagazineComponent />} />
+                    <Route
+                        path="/searchresult"
+                        element={<SearchResultComponent />}
+                    />
                 </Routes>
             </BrowserRouter>
+            <FooterComponent />
         </div>
     )
 }

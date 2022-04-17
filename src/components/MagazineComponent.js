@@ -13,10 +13,10 @@ export default function MagazineComponent() {
         GetApiData("magazine")
     }, [])
 
-    const GetApiData = (section) => {
+    const GetApiData = () => {
         axios
             .get(
-                `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${apiKey}`
+                `https://api.nytimes.com/svc/topstories/v2/magazine.json?api-key=${apiKey}`
             )
             .then((response) => setApiData(response.data.results))
             .then(() => setDataFetched(true))

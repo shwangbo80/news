@@ -36,14 +36,14 @@ export default function RenderApiData({apiData, dataFetched}) {
                             </a>
 
                             <hr />
-                            <a href={apiData[2].url}>
+                            <a href={apiData[3].url}>
                                 <div>
                                     <h4>{apiData[3].title}</h4>
                                     <h6>{apiData[3].abstract}</h6>
                                 </div>
                             </a>
                             <hr />
-                            <a href={apiData[2].url}>
+                            <a href={apiData[4].url}>
                                 <div>
                                     <h4>{apiData[4].title}</h4>
                                     <h6>{apiData[4].abstract}</h6>
@@ -57,13 +57,13 @@ export default function RenderApiData({apiData, dataFetched}) {
     } else {
         console.log("Data is fetching")
         return (
-            <>
+            <div className="loader-container pt-5">
                 <Spinner
                     animation="border"
                     role="status"
                     className="loader"
                     variant="info"></Spinner>
-            </>
+            </div>
         )
     }
 }

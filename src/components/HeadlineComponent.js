@@ -37,8 +37,8 @@ export default function HeadlineComponent({dataFetched, apiData}) {
                             <Col className="ps-5">
                                 <a href={apiData[1].url}>
                                     <div>
-                                        <h1>{apiData[1].title}</h1>
-                                        <h4>{apiData[1].abstract}</h4>
+                                        <h2>{apiData[1].title}</h2>
+                                        <h6>{apiData[1].abstract}</h6>
                                     </div>
                                 </a>
                                 <hr />
@@ -71,13 +71,13 @@ export default function HeadlineComponent({dataFetched, apiData}) {
         } else {
             console.log("Data is fetching")
             return (
-                <>
+                <div className="loader-container pt-5">
                     <Spinner
                         animation="border"
                         role="status"
                         className="loader"
                         variant="info"></Spinner>
-                </>
+                </div>
             )
         }
     }
