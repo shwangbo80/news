@@ -52,8 +52,8 @@ export default function MainComponent() {
                         path="/"
                         element={
                             <HomeComponent
-                                apiData={apiData}
-                                dataFetched={dataFetched}
+                            // apiData={apiData}
+                            // dataFetched={dataFetched}
                             />
                         }
                     />

@@ -11,7 +11,9 @@ export default function UsComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("us")
+        setTimeout(() => {
+            GetApiData("us")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

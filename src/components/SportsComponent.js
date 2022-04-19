@@ -11,7 +11,9 @@ export default function SportsComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("sports")
+        setTimeout(() => {
+            GetApiData("sports")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

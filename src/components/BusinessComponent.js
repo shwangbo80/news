@@ -11,7 +11,9 @@ export default function BusinessComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("business")
+        setTimeout(() => {
+            GetApiData("business")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

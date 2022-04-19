@@ -11,7 +11,9 @@ export default function PoliticsComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("politics")
+        setTimeout(() => {
+            GetApiData("politics")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

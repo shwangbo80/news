@@ -10,7 +10,9 @@ export default function MagazineComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("magazine")
+        setTimeout(() => {
+            GetApiData("magazine")
+        }, 5000)
     }, [])
 
     const GetApiData = () => {

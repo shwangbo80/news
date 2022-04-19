@@ -11,7 +11,9 @@ export default function ScienceComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("science")
+        setTimeout(() => {
+            GetApiData("science")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

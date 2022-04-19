@@ -11,7 +11,9 @@ export default function ArtsComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("arts")
+        setTimeout(() => {
+            GetApiData("arts")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

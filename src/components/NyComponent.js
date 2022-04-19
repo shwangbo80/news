@@ -11,7 +11,9 @@ export default function NyComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("nyregion")
+        setTimeout(() => {
+            GetApiData("nyregion")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

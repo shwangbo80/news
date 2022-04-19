@@ -11,7 +11,9 @@ export default function BooksComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("books")
+        setTimeout(() => {
+            GetApiData("books")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

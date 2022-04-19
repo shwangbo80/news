@@ -11,7 +11,9 @@ export default function OpinionComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("opinion")
+        setTimeout(() => {
+            GetApiData("opinion")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

@@ -11,7 +11,9 @@ export default function FoodComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("food")
+        setTimeout(() => {
+            GetApiData("food")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

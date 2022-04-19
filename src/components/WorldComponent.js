@@ -11,7 +11,9 @@ export default function WorldComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("world")
+        setTimeout(() => {
+            GetApiData("world")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

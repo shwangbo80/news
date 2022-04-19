@@ -11,7 +11,9 @@ export default function TechComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("technology")
+        setTimeout(() => {
+            GetApiData("technology")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

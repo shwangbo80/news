@@ -10,7 +10,9 @@ export default function TravelComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("travel")
+        setTimeout(() => {
+            GetApiData("travel")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {

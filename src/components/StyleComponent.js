@@ -11,7 +11,9 @@ export default function StyleComponent() {
     const [dataFetched, setDataFetched] = useState(false)
 
     useEffect(() => {
-        GetApiData("style")
+        setTimeout(() => {
+            GetApiData("style")
+        }, 5000)
     }, [])
 
     const GetApiData = (section) => {
