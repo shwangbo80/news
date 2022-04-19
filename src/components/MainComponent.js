@@ -48,15 +48,7 @@ export default function MainComponent() {
             <NavbarComponent />
             <BrowserRouter>
                 <Routes>
-                    <Route
-                        path="/"
-                        element={
-                            <HomeComponent
-                            // apiData={apiData}
-                            // dataFetched={dataFetched}
-                            />
-                        }
-                    />
+                    <Route path="/" element={<HomeComponent />} />
                     <Route path="/world" element={<WorldComponent />} />
                     <Route path="/us" element={<UsComponent />} />
                     <Route path="/politics" element={<PoliticsComponent />} />
