@@ -14,7 +14,10 @@ export default function NavbarComponent() {
         <>
             <Navbar bg="light" variant="light" expand={false}>
                 <Container fluid>
-                    <Navbar.Toggle aria-controls="offcanvasNavbar" />
+                    <Navbar.Toggle
+                        aria-controls="offcanvasNavbar"
+                        className="d-none d-lg-block d-xl-block"
+                    />
                     <Form className="d-flex">
                         <FormControl
                             type="search"
@@ -69,7 +72,7 @@ export default function NavbarComponent() {
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="light">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
