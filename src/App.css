@@ -33,7 +33,7 @@ a:link {
 .center-cropped {
   width: 100%;
   height: 250px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 /* .loader {
